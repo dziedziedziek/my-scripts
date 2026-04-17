@@ -20,7 +20,7 @@ if getgenv().PotatoHubAutoLoad then
             task.wait(2) -- ważne dla Xeno
 
             queue([[
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/TWOJ_LOGIN/potatohub/main/main.lua"))()
+                loadstring(https://raw.githubusercontent.com/dziedziedziek/my-scripts/refs/heads/main/base.lua"))()
             ]])
         end
     end)
