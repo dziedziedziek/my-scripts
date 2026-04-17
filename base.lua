@@ -17,7 +17,7 @@ end
 if getgenv().PotatoHubAutoLoad then
     game.Players.LocalPlayer.OnTeleport:Connect(function(state)
         if state == Enum.TeleportState.Started then
-            task.wait(2) -- ważne dla Xeno
+            task.wait(4) -- ważne dla Xeno
 
             queue([[
                 loadstring("https://raw.githubusercontent.com/dziedziedziek/my-scripts/refs/heads/main/base.lua"))()
