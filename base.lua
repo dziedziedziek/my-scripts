@@ -95,7 +95,7 @@ local function AutoJoin()
 
         if data and data.data then
             for _,v in pairs(data.data) do
-                if v.playing < v.maxPlayers then
+                if v.playing >= 5 v.maxPlayers <= 7 then
                     table.insert(servers, v.id)
                 end
             end
