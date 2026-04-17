@@ -20,7 +20,7 @@ if getgenv().PotatoHubAutoLoad then
             task.wait(2) -- ważne dla Xeno
 
             queue([[
-               loadstring(game:HttpGet("https://raw.githubusercontent.com/dziedziedziek/my-scripts/main/base.lua"))()
+                loadstring("https://raw.githubusercontent.com/dziedziedziek/my-scripts/refs/heads/main/base.lua"))()
             ]])
         end
     end)
@@ -95,7 +95,7 @@ local function AutoJoin()
 
         if data and data.data then
             for _,v in pairs(data.data) do
-                if v.playing >= 5 v.maxPlayers <= 7 then
+                if v.playing < v.maxPlayers then
                     table.insert(servers, v.id)
                 end
             end
