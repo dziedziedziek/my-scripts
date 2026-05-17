@@ -33,7 +33,7 @@ const FMZNkdv = {
                     if (port === "9339") {
                         console.log("Redirecting to localhost");
 
-                        args[0].writeUtf8String("127.0.0.1");
+                        args[0].writeUtf8String("192.168.3.180");
 
                         PepperCrypto.Patch();
                     }
